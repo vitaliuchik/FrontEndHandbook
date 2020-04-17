@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#media_link {
+    background-color: #307b8b;
+}
+
+/*
+=====================
+    Audio
+=====================
+*/
+
+.player {
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.player p {
+    font-size: 14px;
+}
+
+#audio {
+    width: 29%;
+}
+
+#video {
+    width: 53%;
+}

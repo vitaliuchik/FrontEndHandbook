@@ -1,0 +1,35 @@
+{% extends 'handbook/base.html' %}
+{% load static %}
+
+{% block title %}
+Media
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'handbook/css/media.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Audio</h1>
+    <br>
+    <div class="player" id="audio">
+        <p>Василь Васильців - Комп'ютер-Інтернет</p>
+        <audio controls="controls">
+        <source src="{% static 'handbook/media/music.mp3' %}" type="audio/mpeg" />
+        Your browser does not support the audio element.
+        </audio>
+    </div>
+    <br><br>
+
+    <h1>Video</h1>
+    <br>
+    <div class="player" id="video">
+        <p>Шокирующее интервью с разработчиком сайтов</p>
+        <video width="540" height="360" controls>
+        <source src="{% static 'handbook/media/video.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+{% endblock %}
+
+

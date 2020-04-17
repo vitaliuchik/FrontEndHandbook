@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#images_link {
+    background-color: #307b8b;
+}
+
+/*
+=====================
+    Images
+=====================
+*/
+
+#devops {
+    width: 360px;
+    height: auto;
+}
+
+#jython {
+    width: 360px;
+    height: auto;
+}

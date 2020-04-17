@@ -1,0 +1,46 @@
+{% extends 'handbook/base.html' %}
+{% load static %}
+
+{% block title %}
+Text
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'handbook/css/images.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Images</h1>
+    <br><br>
+    <img id="devops" src="{% static 'handbook/images/devops.png' %}" alt="DevOps">
+    <br><br>
+
+    <div class="code">
+        <p>Code</p>
+        <div>
+        <span class="brackets">&lt;</span><span class="tag">img</span>&nbsp;src="path" alt="message"<span class="brackets">&gt;</span>
+        </div>
+    </div>
+    <br><br>
+
+    <h2>Image as link</h2>
+    <p>Click to visit...</p>
+    <a href="https://www.reddit.com/r/ProgrammerHumor/">
+    <img id="jython" src="{% static 'handbook/images/jython.jpg' %}" alt="Jython">
+    </a>
+    <br><br>
+
+    <div class="code">
+        <p>Code</p>
+        <div>
+            <span class="brackets">&lt;</span><span class="tag">a</span>&nbsp;href="path"<span class="brackets">&gt;</span><br>
+            <span class="brackets">&lt;</span><span class="tag">img</span>&nbsp;src="path" alt="message"<span class="brackets">&gt;</span><br>
+            <span class="brackets">&lt;<span class="tag">/a</span>&gt;</span><br>
+        </div>
+    </div>
+    <br><br>
+
+{% endblock %}
+
+

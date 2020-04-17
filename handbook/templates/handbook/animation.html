@@ -1,0 +1,22 @@
+{% extends 'handbook/base.html' %}
+{% load static %}
+
+{% block title %}
+Animation
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'handbook/css/animation.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>Animation (transforms and transitions)</h1>
+    <img id="u1" src="{% static 'handbook/images/u.png' %}" alt="">
+    <img id="c" src="{% static 'handbook/images/c.png' %}" alt="">
+    <img id="u2" src="{% static 'handbook/images/u.png' %}" alt="">
+
+    <p><i><a href="{% url 'handbook:animation' %}">Refresh</a> page to see the animation again</i></p>
+
+{% endblock %}

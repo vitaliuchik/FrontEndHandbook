@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*
+=====================
+    Content
+=====================
+*/
+
+#tables_link {
+    background-color: #307b8b;
+}
+
+#rating {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-radius: .7em;
+  overflow: hidden;
+  width: 100%;
+}
+
+#rating td, #rating th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#rating tr:nth-child(odd){background-color: #f2f2f2;}
+
+#rating tr:hover {background-color: #ddd;}
+
+#rating th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #bab4d7;
+  color: #000000;
+}

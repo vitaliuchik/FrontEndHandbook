@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*
+=====================
+    Content
+=====================
+*/
+
+#animation_link {
+    background-color: #307b8b;
+}
+
+
+img {
+    width: 300px;
+    height: auto;
+    position: relative;
+
+}
+
+#u1 {
+    animation-name: u1;
+    animation-duration: 8s;
+}
+
+#c {
+    animation-name: c;
+    animation-duration: 8s;
+
+}
+
+#u2 {
+    animation-name: u2;
+    animation-duration: 8s;
+}
+
+@keyframes u1 {
+    0% {top: 250px;left: -350px;transform: rotate(-400deg);width: 256px; height: auto}
+    50% {top: 0;left: 0;transform: rotate(0);width: 256px; height: auto}
+    70% {top: 0;left: 0;transform: rotate(0);width: 256px; height: auto}
+    100% {width: 300px; height: auto}
+}
+
+@keyframes c {
+    0% {top: 300px;left: 350px;transform: rotate(400deg);width: 256px; height: auto}
+    50% {top: 0;left: 0;transform: rotate(0);width: 256px; height: auto}
+    75% {top: 0;left: 0;transform: rotate(0);width: 256px; height: auto}
+    100% {width: 300px; height: auto}
+}
+
+@keyframes u2 {
+    0% {top: -150px;left: 300px;transform: rotate(-400deg);width: 256px; height: auto}
+    50% {top: 0;left: 0;transform: rotate(0);width: 256px; height: auto}
+    75% {top: 0;left: 0;transform: rotate(0);width: 256px; height: auto}
+    100% {width: 300px; height: auto}
+}
+
+p {
+    position: relative;
+    top: 150px;
+    animation-name: p;
+    animation-duration: 10s;
+}
+
+@keyframes p {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}

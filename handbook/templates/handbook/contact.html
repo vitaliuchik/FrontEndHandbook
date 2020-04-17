@@ -1,0 +1,35 @@
+{% extends 'handbook/base.html' %}
+{% load static %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'handbook/css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Contact</h1>
+    <br>
+    <form>
+        <table>
+            <tr>
+                <td><span class="require">*</span> Name</td>
+                <td><input type="text" placeholder="Name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="username@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><span class="require">*</span> Message</td>
+                <td><textarea rows="6"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send"></td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}

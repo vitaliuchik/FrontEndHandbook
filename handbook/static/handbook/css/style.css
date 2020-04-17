@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap);
+
+/*
+=====================
+    Common
+=====================
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+*:focus {
+    outline:none !important
+}
+
+.container {
+    height: 100%;
+}
+
+.sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #44A0B5;
+    position: fixed;
+}
+
+.main {
+    float: right;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+}
+
+.content {
+    padding: 50px 100px;
+}
+
+
+/*
+=====================
+    Sidebar
+=====================
+*/
+
+.site_name {
+    text-align: center;
+}
+
+.site_name a {
+    text-decoration: none;
+    color: white;
+}
+
+.site_name a:hover {
+    color: lightgray;
+}
+
+.sidebar ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    border-bottom: 1px solid white;
+    padding-left: 30px;
+    line-height: 60px;
+}
+
+.sidebar ul li:first-child {
+    border-top: 1px solid white;
+}
+
+.sidebar ul li:hover {
+    background-color: #ff69b4;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 60px;
+}
+
+
+.sidebar footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#to_top {
+    color: black;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 30px;
+}
+
+/*
+=====================
+    Content
+=====================
+*/
+
+.code {
+    clear: both;
+    /*position: relative;*/
+    background-color: lightgray;
+    padding: 0 10px 10px;
+    display: inline-block;
+}
+
+.code div {
+    margin-left: 0;
+    padding: 5px;
+    background-color: white;
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+}
+
+.code .brackets {
+    color: #5368e2;
+}
+
+.code .tag {
+    color: #ff5470;
+}

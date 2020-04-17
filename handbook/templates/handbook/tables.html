@@ -1,0 +1,76 @@
+{% extends 'handbook/base.html' %}
+{% load static %}
+
+{% block title %}
+Tables
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'handbook/css/tables.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>Programming languages rate</h1>
+    <br><br>
+
+    <table id="rating">
+      <tr>
+        <th>Rank</th>
+        <th>Language</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Java</td>
+        <td>17%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>C</td>
+        <td>16%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>JavaScript</td>
+        <td>12%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Python</td>
+        <td>9%</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>C++</td>
+        <td>7%</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>C#</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>PHP</td>
+        <td>3%</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>SQL</td>
+        <td>2%</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Visual Basic</td>
+        <td>2%</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Swift</td>
+        <td>1%</td>
+      </tr>
+    </table>
+
+{% endblock %}

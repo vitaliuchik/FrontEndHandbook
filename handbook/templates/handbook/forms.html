@@ -1,0 +1,62 @@
+{% extends 'handbook/base.html' %}
+{% load static %}
+
+{% block title %}
+Forms
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'handbook/css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Quiz</h1>
+    <br>
+    <form>
+        <table>
+            <tr>
+                <td><span class="require">*</span> Full name</td>
+                <td><input type="text" placeholder="Vitalii Papka"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="username@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><span class="require">*</span> HTML</td>
+                <td>
+                    <input type="radio" id="first1" name="abbr" value="true">
+                    <label for="first1">Hyper Tool Markup Language</label><br>
+                    <input type="radio" id="first2" name="abbr" value="false">
+                    <label for="first2">Hyper Text Markup Language</label><br>
+                    <input type="radio" id="first3" name="abbr" value="false">
+                    <label for="first3">Hyperlinks and Text Markup Language</label>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="require">*</span> Headings</td>
+                <td>
+                    <form action="">
+                    <input type="checkbox" id="second1" name="heading" value="true">
+                    <label for="second1">&lt;h2&gt;</label><br>
+                    <input type="checkbox" id="second2" name="heading" value="false">
+                    <label for="second2">&lt;header&gt;</label><br>
+                    <input type="checkbox" id="second3" name="heading" value="false">
+                    <label for="second3">&lt;heading&gt;</label><br>
+                    <input type="checkbox" id="second4" name="heading" value="true">
+                    <label for="second4">&lt;h6&gt;</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td> Feedback</td>
+                <td><textarea rows="6"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send"></td>
+            </tr>
+        </table>
+    </form>
+
+{% endblock %}
